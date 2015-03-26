@@ -98,6 +98,9 @@ header .header-wrapp .register li a {
     font-size: 12px;
     text-shadow: 0px 0px 2px #FFF, 0px 0px 2px #FFF, 0px 0px 2px #FFF;
 }
+header .header-wrapp .register li:hover {
+    background: #F3D28F;
+}
 /*
 header .header-wrapp .register .for-user {
     display: none;
@@ -152,7 +155,7 @@ main {
     margin: 0px auto;
     text-align: center;
 }
-main .presentation {
+.presentation {
     background: url(../images/presentation.jpg) center center no-repeat;
     height: 441px;
     color: #1B1254;
@@ -177,17 +180,20 @@ main .presentation .note {
 main .add-advert {
     background: #9E76AD;
     display: inline-block;
-    margin: 118px 0 122px 0;
+    margin: 20px 0;
     padding: 21px 41px 26px;
     border: 1px solid #705D8E;
     font-size: 35px;
     color: #EFEFEC;
 }
+main .add-advert:hover {
+    color: #EBAD2C;
+}
 main .h2-wrapp {
     background: url(../images/h2bg.png) center repeat-x;
         margin: 0 0 27px;
 }
-h2 {
+.main-page h2 {
     display: inline;
     background: #FFF;
     padding: 0 30px;
@@ -257,7 +263,7 @@ footer .footer-top .footer-top-wrapp .footer-nav li a{
     letter-spacing: 1px;
 }
 footer .footer-top .footer-top-wrapp .footer-nav li a:hover {
-    color: #FFEFBF;
+    color: #EBAD2C;
 }
 footer .footer-bottom {
     background: #847A94;
@@ -281,4 +287,128 @@ footer .footer-bottom .footer-bottom-wrapp .author {
     color: #342C55;
 }
 
-/*media screen*/
+/*lost*/
+a.add-advert-other {
+    color: #1B1254;
+    text-decoration: underline;
+}
+.adverts article {
+    overflow: hidden;
+    margin: 23px 0 35px 0;
+    text-align: justify;
+    color: #1B1254;
+    padding: 0 0 20px 0;
+    border-bottom: 2px dashed #EBAD2C;
+}
+.adverts article img {
+    float: left;
+    margin: 0 23px 0 0;
+    width: 243px;
+} 
+.adverts h2 {
+    margin: 0 0 20px 0;
+    font-size: 23px;
+}
+.adverts article .contacts {
+    margin: 15px;
+    font-weight: bold;
+}
+
+/*ad-form*/
+.ad-form .note {
+    margin: 30px 0 0;
+}
+.ad-form .add-ad ul {
+    overflow: hidden;
+}
+.ad-form .add-ad {
+    border: 2px dashed #EBAD2C;
+    padding: 20px;
+    overflow: hidden;
+    text-align: left;
+    margin: 40px 0;
+}
+.ad-form .add-ad .picture {
+    float: left;
+    margin: 0 25px 0 0;
+}
+.ad-form .add-ad .container-picture {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.ad-form .add-ad .container-picture .close {
+    width: 23px;
+    height: 23px;
+    display: block;
+    position: absolute;
+    background: url(../images/close-img.png) center center no-repeat;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+.ad-form .add-ad .container-picture .close:hover {
+    background: url(../images/close-img-hover.png) center center no-repeat;
+}
+.ad-form .add-ad .picture input {
+    display: none;
+}
+.ad-form .add-ad .picture label {
+    display: block;
+    width: 300px;
+    height: 120px;
+    border: 1px dashed #1B1254;
+    padding: 135px 0 0;
+    background: url(../images/icon-ad.png) center 95px no-repeat;
+    cursor: pointer;
+}
+.ad-form .add-ad .picture label:hover {
+    border: 1px solid #1B1254;
+}
+.ad-form .add-ad label {
+    font-size: 23px;
+    color: #1B1254;
+    text-align: center;
+    font-weight: bold;
+}
+.ad-form .add-ad input, .ad-form .add-ad textarea {
+    border: 1px dashed #1B1254;
+    display: block;
+    margin: 10px 0 20px 0;
+    width: 690px;
+    padding: 4px 5px;
+    font: 20px 'comfortaaregular';
+    color: #1B1254;
+}
+.ad-form .add-ad textarea {
+    height: 250px;
+    resize: none;
+}
+.ad-form .add-ad input:focus, .ad-form .add-ad textarea:focus {
+    border: 1px solid #1B1254;
+}
+.ad-form .add-ad input[type="submit"] {
+    background: rgba(243, 210, 143, 0.9);
+    width: 300px;
+    font-weight: bold;
+    margin: 40px 0 0;
+    padding: 15px;
+}
+.ad-form .add-ad input[type="submit"]:hover {
+    border: 1px solid #1B1254;
+    background: #EBAD2C;
+}
+/*popup*/
+.popup {
+    width: 315px;
+    background: url(../images/popup-icon.png) center 26px no-repeat, #9A7CC7;
+    margin: 0px 0 100px 0;
+    display: none;
+}
+.popup input[type="text"] {
+    margin: 100px 0 0;
+}
+.popup input {
+    width: 266px;
+    border-radius: 5px;
+}

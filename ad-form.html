@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <title>Заботливые руки</title>       
+        <title>Добавить объявление</title>       
         <meta charset="utf-8">
         <meta name="keywords" content="">
         <meta name="description" content="Доска объявлений о потерянных и найденных животных, г. Черкассы">
@@ -61,39 +61,32 @@
                 </li>
             </ul>
         </nav>
-        <main role="main" class="main-page">
-            <div class="presentation">
-                <h1 class="uppercase">Заботливые руки</h1>
-                <p class="description">Место встречи животных с заботливыми хозяевами</p>
-                <p class="note">Доска бесплатных объявлений по г. Черкассы и Черкасской области</p>
+        <main role="main" class="ad-form">
+           <div class="presentation">
+                <h1 class="uppercase">Добавить объявление</h1>
+                
+                <p class="note">Оставьте Ваше объявление, что бы питомец скорее нашел дом и заботливые руки</p>
             </div>
-            <a class="add-advert" href="#">Добавить объявление</a>
-            <div class="h2-wrapp">
-                <h2>We love pets</h2>
-            </div>
-            <ul class="img-pets">
-                <li><a href="#"><img src="images/img-pets-1.jpg" alt="" width="359" height="304"></a></li>
-                <li><a href="#"><img src="images/img-pets-2.jpg" alt="" width="359" height="304"></a></li>
-                <li><a href="#"><img src="images/img-pets-3.jpg" alt="" width="359" height="304"></a></li>
-            </ul>
-            <ul class="questions">
-                <li class="purple"><p>Вы нашли или потеряли Вашего любимца?</p></li>
-                <li class="red"><p>Хотите отдать животное в дар?</p></li>
-                <li class="blue"><p>Ищете верного четвероногого друга?</p></li>
-                <li class="yellow"><p>Оставьте Ваше объявление, что бы питомец скорее нашел дом и заботливые руки</p></li>
-            </ul>
-            <div class="popup">
-                <form action="" method="">
-                    <fieldset>
-                       <ul>
-                           <li><input type="text" name="name" /></li>
-                           <li><input type="password" name="pass" /></li>
-                           <li><input type="email" name="email" /></li>
-                           <li><input type="submit" value="Регистрация" /></li>
-                       </ul>                    
+            <section>
+                <form method="post">
+                    <fieldset class="add-ad">
+                        <div class="picture">
+                                <div class="container-picture">
+                                    <img src="images/ad-form-img.jpg" alt="" />
+                                    <span class="close"></span>
+                                </div>
+                                <label for="picture">Фото</label><input name="picture" id="picture" type="file" />
+                        </div>
+                        <ul>
+                            <li><label for="title">Заголовок</label><input name="title" id="title" type="text" /></li>
+                            <li><label for="city">Город</label><input name="city" id="city" type="text" /></li>
+                            <li><label for="description">Описание животного</label><textarea id="description" name="description"></textarea></li>
+                            <li><label for="phone">Контактный телефон</label><input name="phone" id="phone" type="text" /></li>
+                            <li><input type="submit" value="Добавить объявление" /></li>
+                        </ul>
                     </fieldset>
                 </form>
-            </div>
+            </section>
         </main>
         <footer>
             <div class="footer-top">
